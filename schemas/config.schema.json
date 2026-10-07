@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "const": "1.0"
+    },
+    "mode": {
+      "type": "string",
+      "enum": [
+        "demo",
+        "http",
+        "off"
+      ]
+    },
+    "apiBase": {
+      "anyOf": [
+        {
+          "type": "string",
+          "format": "uri"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "timeoutMs": {
+      "type": "integer",
+      "minimum": 50,
+      "maximum": 15000
+    }
+  },
+  "required": [
+    "schemaVersion",
+    "mode",
+    "apiBase",
+    "timeoutMs"
+  ],
+  "additionalProperties": false
+}

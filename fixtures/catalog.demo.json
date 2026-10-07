@@ -1,0 +1,1052 @@
+{
+  "schemaVersion": "1.0",
+  "namespace": "DEMO_DATA",
+  "projects": [
+    {
+      "project": {
+        "schemaVersion": "1.0",
+        "projectId": "demo:grove",
+        "name": "Grove Protocol",
+        "subtitle": "讓公共資源的資金流向更清楚",
+        "category": "公共財 · TOKEN",
+        "description": "假想的公共財資助協議。以代幣記錄提案與資金分配，探索治理參與和資金使用之間的關係。",
+        "assetType": "TOKEN",
+        "assets": [
+          {
+            "assetId": "demo:asset:grove-eth",
+            "symbol": "GRV",
+            "chain": "Ethereum",
+            "network": "fixture:ethereum",
+            "address": "fixture:grove-eth",
+            "kind": "TOKEN",
+            "collection": null,
+            "tokenId": null,
+            "decimals": 18
+          }
+        ],
+        "discoveredAt": "2026-09-30T09:00:00Z",
+        "relationships": [
+          "收錄僅供研究；資產持有不等同公司股權或回報承諾。"
+        ]
+      },
+      "reports": [
+        {
+          "schemaVersion": "1.0",
+          "projectId": "demo:grove",
+          "reportId": "demo:report:grove",
+          "revision": 1,
+          "parentRevision": null,
+          "state": "PUBLISHED",
+          "reason": "建立初始研究脈絡（合成案例）。",
+          "quality": "LIMITED",
+          "discoveredAt": "2026-09-28T08:00:00Z",
+          "retrievedAt": "2026-09-29T10:00:00Z",
+          "analyzedAt": "2026-09-30T09:00:00Z",
+          "verifiedAt": null,
+          "claims": [
+            {
+              "claim_id": "purpose",
+              "category": "PURPOSE",
+              "text": "假想的公共財資助協議。以代幣記錄提案與資金分配，探索治理參與和資金使用之間的關係。",
+              "evidenceStatus": "PARTIAL",
+              "evidenceIds": [
+                "demo:ev:brief"
+              ],
+              "limitation": "合成案例，沒有實際鏈上或獨立驗證。"
+            },
+            {
+              "claim_id": "money-source",
+              "category": "MONEY_SOURCE",
+              "text": "範例設定：由社群提案資助與協議使用費提供資金。",
+              "evidenceStatus": "PARTIAL",
+              "evidenceIds": [
+                "demo:ev:brief"
+              ],
+              "limitation": "收入金額與支付者均未驗證。"
+            },
+            {
+              "claim_id": "money-destination",
+              "category": "MONEY_DESTINATION",
+              "text": "資金用途由專案管理者決定；分配比例尚未揭露。",
+              "evidenceStatus": "UNCONFIRMED",
+              "evidenceIds": [],
+              "limitation": "無可驗證的支出紀錄。"
+            },
+            {
+              "claim_id": "rights",
+              "category": "RIGHTS",
+              "text": "可參與提案討論；不代表可贖回資金或取得收益。",
+              "evidenceStatus": "UNCONFIRMED",
+              "evidenceIds": [],
+              "limitation": "此描述不是可執行的權利或合約。"
+            },
+            {
+              "claim_id": "rules",
+              "category": "RULES",
+              "text": "管理者可提出規則變更；是否有延遲與否決機制尚未確認。",
+              "evidenceStatus": "UNCONFIRMED",
+              "evidenceIds": [],
+              "limitation": "未檢視任何真實合約或管理權限。"
+            }
+          ],
+          "sources": [
+            {
+              "sourceId": "demo:source:brief",
+              "label": "合成專案說明 · 非真實研究來源",
+              "url": "https://example.org/",
+              "kind": "SYNTHETIC",
+              "publishedAt": "2026-09-28T08:00:00Z",
+              "retrievedAt": "2026-09-29T10:00:00Z"
+            }
+          ],
+          "evidence": [
+            {
+              "evidenceId": "demo:ev:brief",
+              "sourceId": "demo:source:brief",
+              "excerpt": "此為測試用虛構說明，僅展示證據、修訂與限制的閱讀方式。",
+              "location": "fixture / project-brief / paragraph-1"
+            }
+          ],
+          "metrics": [
+            {
+              "metricId": "demo:metric:volume",
+              "label": "使用量",
+              "kind": "VOLUME",
+              "amountAtomic": null,
+              "decimals": null,
+              "assetRef": null,
+              "unit": null,
+              "currency": null,
+              "asOf": null,
+              "sourceId": null
+            },
+            {
+              "metricId": "demo:metric:fees",
+              "label": "已收取費用",
+              "kind": "FEES_RECEIVED",
+              "amountAtomic": null,
+              "decimals": null,
+              "assetRef": null,
+              "unit": null,
+              "currency": null,
+              "asOf": null,
+              "sourceId": null
+            }
+          ],
+          "changes": [
+            {
+              "claim_id": "purpose",
+              "kind": "ADDED",
+              "reason": "初始收錄。",
+              "evidenceIds": [
+                "demo:ev:brief"
+              ]
+            }
+          ],
+          "limitations": [
+            "所有內容均為 DEMO_DATA，未進行即時資料擷取或鏈上驗證。",
+            "來源頁面為保留的範例網域，不提供上述主張的證明。",
+            "未確認的新鮮度一律標記 STALE；雜湊不證明研究品質或安全性。"
+          ],
+          "commercialRelationship": {
+            "declaration": "DECLARED",
+            "inclusion": "EDITORIAL",
+            "research": "UNPAID",
+            "sponsorship": "NONE",
+            "imdRelationship": "NONE",
+            "selfProject": false,
+            "details": "合成披露：無收錄費、研究費或贊助。此設定僅用於介面測試。"
+          },
+          "approval": "SYNTHETIC_DEMO"
+        },
+        {
+          "schemaVersion": "1.0",
+          "projectId": "demo:grove",
+          "reportId": "demo:report:grove",
+          "revision": 2,
+          "parentRevision": 1,
+          "state": "PUBLISHED",
+          "reason": "補充資金去向與規則變更限制。",
+          "quality": "LIMITED",
+          "discoveredAt": "2026-09-28T08:00:00Z",
+          "retrievedAt": "2026-09-29T10:00:00Z",
+          "analyzedAt": "2026-10-02T11:30:00Z",
+          "verifiedAt": null,
+          "claims": [
+            {
+              "claim_id": "purpose",
+              "category": "PURPOSE",
+              "text": "假想的公共財資助協議。以代幣記錄提案與資金分配，探索治理參與和資金使用之間的關係。",
+              "evidenceStatus": "PARTIAL",
+              "evidenceIds": [
+                "demo:ev:brief"
+              ],
+              "limitation": "合成案例，沒有實際鏈上或獨立驗證。"
+            },
+            {
+              "claim_id": "money-source",
+              "category": "MONEY_SOURCE",
+              "text": "範例設定：由社群提案資助與協議使用費提供資金。",
+              "evidenceStatus": "PARTIAL",
+              "evidenceIds": [
+                "demo:ev:brief"
+              ],
+              "limitation": "收入金額與支付者均未驗證。"
+            },
+            {
+              "claim_id": "money-destination",
+              "category": "MONEY_DESTINATION",
+              "text": "範例設定：資金分配至公共財提案與營運儲備；實際比例仍未知。",
+              "evidenceStatus": "PARTIAL",
+              "evidenceIds": [
+                "demo:ev:brief"
+              ],
+              "limitation": "無可驗證的支出紀錄。"
+            },
+            {
+              "claim_id": "rights",
+              "category": "RIGHTS",
+              "text": "可參與提案討論；不代表可贖回資金或取得收益。",
+              "evidenceStatus": "UNCONFIRMED",
+              "evidenceIds": [],
+              "limitation": "此描述不是可執行的權利或合約。"
+            },
+            {
+              "claim_id": "rules",
+              "category": "RULES",
+              "text": "管理者可提出規則變更；是否有延遲與否決機制尚未確認。",
+              "evidenceStatus": "UNCONFIRMED",
+              "evidenceIds": [],
+              "limitation": "未檢視任何真實合約或管理權限。"
+            }
+          ],
+          "sources": [
+            {
+              "sourceId": "demo:source:brief",
+              "label": "合成專案說明 · 非真實研究來源",
+              "url": "https://example.org/",
+              "kind": "SYNTHETIC",
+              "publishedAt": "2026-09-28T08:00:00Z",
+              "retrievedAt": "2026-09-29T10:00:00Z"
+            }
+          ],
+          "evidence": [
+            {
+              "evidenceId": "demo:ev:brief",
+              "sourceId": "demo:source:brief",
+              "excerpt": "此為測試用虛構說明，僅展示證據、修訂與限制的閱讀方式。",
+              "location": "fixture / project-brief / paragraph-1"
+            }
+          ],
+          "metrics": [
+            {
+              "metricId": "demo:metric:volume",
+              "label": "使用量",
+              "kind": "VOLUME",
+              "amountAtomic": null,
+              "decimals": null,
+              "assetRef": null,
+              "unit": null,
+              "currency": null,
+              "asOf": null,
+              "sourceId": null
+            },
+            {
+              "metricId": "demo:metric:fees",
+              "label": "已收取費用",
+              "kind": "FEES_RECEIVED",
+              "amountAtomic": null,
+              "decimals": null,
+              "assetRef": null,
+              "unit": null,
+              "currency": null,
+              "asOf": null,
+              "sourceId": null
+            }
+          ],
+          "changes": [
+            {
+              "claim_id": "money-destination",
+              "kind": "UPDATED",
+              "reason": "範例說明新增用途分類，未提供比例。",
+              "evidenceIds": [
+                "demo:ev:brief"
+              ]
+            }
+          ],
+          "limitations": [
+            "所有內容均為 DEMO_DATA，未進行即時資料擷取或鏈上驗證。",
+            "來源頁面為保留的範例網域，不提供上述主張的證明。",
+            "未確認的新鮮度一律標記 STALE；雜湊不證明研究品質或安全性。"
+          ],
+          "commercialRelationship": {
+            "declaration": "DECLARED",
+            "inclusion": "EDITORIAL",
+            "research": "UNPAID",
+            "sponsorship": "NONE",
+            "imdRelationship": "NONE",
+            "selfProject": false,
+            "details": "合成披露：無收錄費、研究費或贊助。此設定僅用於介面測試。"
+          },
+          "approval": "SYNTHETIC_DEMO"
+        },
+        {
+          "schemaVersion": "1.0",
+          "projectId": "demo:grove",
+          "reportId": "demo:report:grove",
+          "revision": 3,
+          "parentRevision": 2,
+          "state": "DRAFT",
+          "reason": "草稿複核；無實質變更。",
+          "quality": "LIMITED",
+          "discoveredAt": "2026-09-28T08:00:00Z",
+          "retrievedAt": "2026-09-29T10:00:00Z",
+          "analyzedAt": "2026-10-02T11:30:00Z",
+          "verifiedAt": null,
+          "claims": [
+            {
+              "claim_id": "purpose",
+              "category": "PURPOSE",
+              "text": "假想的公共財資助協議。以代幣記錄提案與資金分配，探索治理參與和資金使用之間的關係。",
+              "evidenceStatus": "PARTIAL",
+              "evidenceIds": [
+                "demo:ev:brief"
+              ],
+              "limitation": "合成案例，沒有實際鏈上或獨立驗證。"
+            },
+            {
+              "claim_id": "money-source",
+              "category": "MONEY_SOURCE",
+              "text": "範例設定：由社群提案資助與協議使用費提供資金。",
+              "evidenceStatus": "PARTIAL",
+              "evidenceIds": [
+                "demo:ev:brief"
+              ],
+              "limitation": "收入金額與支付者均未驗證。"
+            },
+            {
+              "claim_id": "money-destination",
+              "category": "MONEY_DESTINATION",
+              "text": "範例設定：資金分配至公共財提案與營運儲備；實際比例仍未知。",
+              "evidenceStatus": "PARTIAL",
+              "evidenceIds": [
+                "demo:ev:brief"
+              ],
+              "limitation": "無可驗證的支出紀錄。"
+            },
+            {
+              "claim_id": "rights",
+              "category": "RIGHTS",
+              "text": "可參與提案討論；不代表可贖回資金或取得收益。",
+              "evidenceStatus": "UNCONFIRMED",
+              "evidenceIds": [],
+              "limitation": "此描述不是可執行的權利或合約。"
+            },
+            {
+              "claim_id": "rules",
+              "category": "RULES",
+              "text": "管理者可提出規則變更；是否有延遲與否決機制尚未確認。",
+              "evidenceStatus": "UNCONFIRMED",
+              "evidenceIds": [],
+              "limitation": "未檢視任何真實合約或管理權限。"
+            }
+          ],
+          "sources": [
+            {
+              "sourceId": "demo:source:brief",
+              "label": "合成專案說明 · 非真實研究來源",
+              "url": "https://example.org/",
+              "kind": "SYNTHETIC",
+              "publishedAt": "2026-09-28T08:00:00Z",
+              "retrievedAt": "2026-09-29T10:00:00Z"
+            }
+          ],
+          "evidence": [
+            {
+              "evidenceId": "demo:ev:brief",
+              "sourceId": "demo:source:brief",
+              "excerpt": "此為測試用虛構說明，僅展示證據、修訂與限制的閱讀方式。",
+              "location": "fixture / project-brief / paragraph-1"
+            }
+          ],
+          "metrics": [
+            {
+              "metricId": "demo:metric:volume",
+              "label": "使用量",
+              "kind": "VOLUME",
+              "amountAtomic": null,
+              "decimals": null,
+              "assetRef": null,
+              "unit": null,
+              "currency": null,
+              "asOf": null,
+              "sourceId": null
+            },
+            {
+              "metricId": "demo:metric:fees",
+              "label": "已收取費用",
+              "kind": "FEES_RECEIVED",
+              "amountAtomic": null,
+              "decimals": null,
+              "assetRef": null,
+              "unit": null,
+              "currency": null,
+              "asOf": null,
+              "sourceId": null
+            }
+          ],
+          "changes": [
+            {
+              "claim_id": null,
+              "kind": "NO_MATERIAL_CHANGE",
+              "reason": "No material change；尚未發布。",
+              "evidenceIds": []
+            }
+          ],
+          "limitations": [
+            "所有內容均為 DEMO_DATA，未進行即時資料擷取或鏈上驗證。",
+            "來源頁面為保留的範例網域，不提供上述主張的證明。",
+            "未確認的新鮮度一律標記 STALE；雜湊不證明研究品質或安全性。"
+          ],
+          "commercialRelationship": {
+            "declaration": "DECLARED",
+            "inclusion": "EDITORIAL",
+            "research": "UNPAID",
+            "sponsorship": "NONE",
+            "imdRelationship": "NONE",
+            "selfProject": false,
+            "details": "合成披露：無收錄費、研究費或贊助。此設定僅用於介面測試。"
+          },
+          "approval": "NONE"
+        }
+      ],
+      "manifests": [
+        {
+          "schemaVersion": "1.0",
+          "projectId": "demo:grove",
+          "reportId": "demo:report:grove",
+          "revision": 1,
+          "reportHash": "eb4182107433ebea68a29af61a5a95a68da774e1a51e0b7c1a097a85ee97e288"
+        },
+        {
+          "schemaVersion": "1.0",
+          "projectId": "demo:grove",
+          "reportId": "demo:report:grove",
+          "revision": 2,
+          "reportHash": "42b5add921b3147c70ab455127e0b5425185f865044407fe2fdc1a441d7c4064"
+        },
+        {
+          "schemaVersion": "1.0",
+          "projectId": "demo:grove",
+          "reportId": "demo:report:grove",
+          "revision": 3,
+          "reportHash": "495f5641456af9beb7a06df41a6ce192b9fa88ddeb4fab3718fe2ed4d1a0f467"
+        }
+      ],
+      "publication": {
+        "sequence": 2,
+        "checkedAt": null,
+        "publishedReportRef": {
+          "reportId": "demo:report:grove",
+          "revision": 2,
+          "manifestHash": "b56c19ba5ff72ad5b668fc0db6aa8c2c1dadc672144024cd747eb76621476b01"
+        }
+      },
+      "withdrawals": []
+    },
+    {
+      "project": {
+        "schemaVersion": "1.0",
+        "projectId": "demo:atelier",
+        "name": "Atelier Objects",
+        "subtitle": "數位收藏與實體創作之間",
+        "category": "數位藝術 · NFT",
+        "description": "假想的獨立創作者收藏計畫。NFT 記錄作品來源；實體作品兌換與著作權需分別查證。",
+        "assetType": "NFT",
+        "assets": [
+          {
+            "assetId": "demo:asset:atelier-tez",
+            "symbol": "OBJ",
+            "chain": "Tezos",
+            "network": "fixture:tezos",
+            "address": "fixture:atelier-tez",
+            "kind": "NFT",
+            "collection": "fixture:collection:atelier-tez",
+            "tokenId": null,
+            "decimals": 0
+          }
+        ],
+        "discoveredAt": "2026-09-30T09:00:00Z",
+        "relationships": [
+          "收錄僅供研究；資產持有不等同公司股權或回報承諾。"
+        ]
+      },
+      "reports": [
+        {
+          "schemaVersion": "1.0",
+          "projectId": "demo:atelier",
+          "reportId": "demo:report:atelier",
+          "revision": 1,
+          "parentRevision": null,
+          "state": "PUBLISHED",
+          "reason": "建立初始研究脈絡（合成案例）。",
+          "quality": "LIMITED",
+          "discoveredAt": "2026-09-28T08:00:00Z",
+          "retrievedAt": "2026-09-29T10:00:00Z",
+          "analyzedAt": "2026-09-30T09:00:00Z",
+          "verifiedAt": null,
+          "claims": [
+            {
+              "claim_id": "purpose",
+              "category": "PURPOSE",
+              "text": "假想的獨立創作者收藏計畫。NFT 記錄作品來源；實體作品兌換與著作權需分別查證。",
+              "evidenceStatus": "PARTIAL",
+              "evidenceIds": [
+                "demo:ev:brief"
+              ],
+              "limitation": "合成案例，沒有實際鏈上或獨立驗證。"
+            },
+            {
+              "claim_id": "money-source",
+              "category": "MONEY_SOURCE",
+              "text": "範例設定：作品初次銷售收入。二級市場收入尚未確認。",
+              "evidenceStatus": "PARTIAL",
+              "evidenceIds": [
+                "demo:ev:brief"
+              ],
+              "limitation": "收入金額與支付者均未驗證。"
+            },
+            {
+              "claim_id": "money-destination",
+              "category": "MONEY_DESTINATION",
+              "text": "資金用途由專案管理者決定；分配比例尚未揭露。",
+              "evidenceStatus": "UNCONFIRMED",
+              "evidenceIds": [],
+              "limitation": "無可驗證的支出紀錄。"
+            },
+            {
+              "claim_id": "rights",
+              "category": "RIGHTS",
+              "text": "收藏不自動移轉著作權；實體兌換條件尚未確認。",
+              "evidenceStatus": "UNCONFIRMED",
+              "evidenceIds": [],
+              "limitation": "此描述不是可執行的權利或合約。"
+            },
+            {
+              "claim_id": "rules",
+              "category": "RULES",
+              "text": "管理者可提出規則變更；是否有延遲與否決機制尚未確認。",
+              "evidenceStatus": "UNCONFIRMED",
+              "evidenceIds": [],
+              "limitation": "未檢視任何真實合約或管理權限。"
+            }
+          ],
+          "sources": [
+            {
+              "sourceId": "demo:source:brief",
+              "label": "合成專案說明 · 非真實研究來源",
+              "url": "https://example.org/",
+              "kind": "SYNTHETIC",
+              "publishedAt": "2026-09-28T08:00:00Z",
+              "retrievedAt": "2026-09-29T10:00:00Z"
+            }
+          ],
+          "evidence": [
+            {
+              "evidenceId": "demo:ev:brief",
+              "sourceId": "demo:source:brief",
+              "excerpt": "此為測試用虛構說明，僅展示證據、修訂與限制的閱讀方式。",
+              "location": "fixture / project-brief / paragraph-1"
+            }
+          ],
+          "metrics": [
+            {
+              "metricId": "demo:metric:volume",
+              "label": "收藏底價",
+              "kind": "NFT_FLOOR",
+              "amountAtomic": null,
+              "decimals": null,
+              "assetRef": null,
+              "unit": null,
+              "currency": null,
+              "asOf": null,
+              "sourceId": null
+            },
+            {
+              "metricId": "demo:metric:fees",
+              "label": "已收取費用",
+              "kind": "FEES_RECEIVED",
+              "amountAtomic": null,
+              "decimals": null,
+              "assetRef": null,
+              "unit": null,
+              "currency": null,
+              "asOf": null,
+              "sourceId": null
+            }
+          ],
+          "changes": [
+            {
+              "claim_id": "purpose",
+              "kind": "ADDED",
+              "reason": "初始收錄。",
+              "evidenceIds": [
+                "demo:ev:brief"
+              ]
+            }
+          ],
+          "limitations": [
+            "所有內容均為 DEMO_DATA，未進行即時資料擷取或鏈上驗證。",
+            "來源頁面為保留的範例網域，不提供上述主張的證明。",
+            "未確認的新鮮度一律標記 STALE；雜湊不證明研究品質或安全性。"
+          ],
+          "commercialRelationship": {
+            "declaration": "DECLARED",
+            "inclusion": "EDITORIAL",
+            "research": "UNPAID",
+            "sponsorship": "NONE",
+            "imdRelationship": "NONE",
+            "selfProject": false,
+            "details": "合成披露：無收錄費、研究費或贊助。此設定僅用於介面測試。"
+          },
+          "approval": "SYNTHETIC_DEMO"
+        }
+      ],
+      "manifests": [
+        {
+          "schemaVersion": "1.0",
+          "projectId": "demo:atelier",
+          "reportId": "demo:report:atelier",
+          "revision": 1,
+          "reportHash": "f1bb61b8e19275d1198d4a995e00d3324dea53e461d549e492c4e649b911ce03"
+        }
+      ],
+      "publication": {
+        "sequence": 1,
+        "checkedAt": null,
+        "publishedReportRef": {
+          "reportId": "demo:report:atelier",
+          "revision": 1,
+          "manifestHash": "055fb25ab41f498478ccc13532ef6e1c0cd03dd384c0b667c37b72e0521f0ae5"
+        }
+      },
+      "withdrawals": []
+    },
+    {
+      "project": {
+        "schemaVersion": "1.0",
+        "projectId": "demo:tide",
+        "name": "Tide Collective",
+        "subtitle": "一個社群，兩種不同的權利",
+        "category": "社群協作 · MIXED",
+        "description": "假想的海洋研究社群。代幣用於協作提案，NFT 用於識別收藏系列，兩者沒有預設兌換關係。",
+        "assetType": "MIXED",
+        "assets": [
+          {
+            "assetId": "demo:asset:tide-base",
+            "symbol": "TIDE",
+            "chain": "Base",
+            "network": "fixture:base",
+            "address": "fixture:tide-base",
+            "kind": "TOKEN",
+            "collection": null,
+            "tokenId": null,
+            "decimals": 18
+          },
+          {
+            "assetId": "demo:asset:tide-pass",
+            "symbol": "PASS",
+            "chain": "Base",
+            "network": "fixture:base",
+            "address": "fixture:tide-pass",
+            "kind": "NFT",
+            "collection": "fixture:collection:tide-pass",
+            "tokenId": null,
+            "decimals": 0
+          }
+        ],
+        "discoveredAt": "2026-09-30T09:00:00Z",
+        "relationships": [
+          "TIDE 與 PASS 為不同資產；代幣不代表 NFT 所有權。",
+          "未確認兌換、收益分配或跨資產權利。"
+        ]
+      },
+      "reports": [
+        {
+          "schemaVersion": "1.0",
+          "projectId": "demo:tide",
+          "reportId": "demo:report:tide",
+          "revision": 1,
+          "parentRevision": null,
+          "state": "PUBLISHED",
+          "reason": "建立初始研究脈絡（合成案例）。",
+          "quality": "LIMITED",
+          "discoveredAt": "2026-09-28T08:00:00Z",
+          "retrievedAt": "2026-09-29T10:00:00Z",
+          "analyzedAt": "2026-09-30T09:00:00Z",
+          "verifiedAt": null,
+          "claims": [
+            {
+              "claim_id": "purpose",
+              "category": "PURPOSE",
+              "text": "假想的海洋研究社群。代幣用於協作提案，NFT 用於識別收藏系列，兩者沒有預設兌換關係。",
+              "evidenceStatus": "PARTIAL",
+              "evidenceIds": [
+                "demo:ev:brief"
+              ],
+              "limitation": "合成案例，沒有實際鏈上或獨立驗證。"
+            },
+            {
+              "claim_id": "money-source",
+              "category": "MONEY_SOURCE",
+              "text": "範例設定：由社群提案資助與協議使用費提供資金。",
+              "evidenceStatus": "PARTIAL",
+              "evidenceIds": [
+                "demo:ev:brief"
+              ],
+              "limitation": "收入金額與支付者均未驗證。"
+            },
+            {
+              "claim_id": "money-destination",
+              "category": "MONEY_DESTINATION",
+              "text": "資金用途由專案管理者決定；分配比例尚未揭露。",
+              "evidenceStatus": "UNCONFIRMED",
+              "evidenceIds": [],
+              "limitation": "無可驗證的支出紀錄。"
+            },
+            {
+              "claim_id": "rights",
+              "category": "RIGHTS",
+              "text": "可參與提案討論；不代表可贖回資金或取得收益。",
+              "evidenceStatus": "UNCONFIRMED",
+              "evidenceIds": [],
+              "limitation": "此描述不是可執行的權利或合約。"
+            },
+            {
+              "claim_id": "rules",
+              "category": "RULES",
+              "text": "管理者可提出規則變更；是否有延遲與否決機制尚未確認。",
+              "evidenceStatus": "UNCONFIRMED",
+              "evidenceIds": [],
+              "limitation": "未檢視任何真實合約或管理權限。"
+            }
+          ],
+          "sources": [
+            {
+              "sourceId": "demo:source:brief",
+              "label": "合成專案說明 · 非真實研究來源",
+              "url": "https://example.org/",
+              "kind": "SYNTHETIC",
+              "publishedAt": "2026-09-28T08:00:00Z",
+              "retrievedAt": "2026-09-29T10:00:00Z"
+            }
+          ],
+          "evidence": [
+            {
+              "evidenceId": "demo:ev:brief",
+              "sourceId": "demo:source:brief",
+              "excerpt": "此為測試用虛構說明，僅展示證據、修訂與限制的閱讀方式。",
+              "location": "fixture / project-brief / paragraph-1"
+            }
+          ],
+          "metrics": [
+            {
+              "metricId": "demo:metric:volume",
+              "label": "使用量",
+              "kind": "VOLUME",
+              "amountAtomic": null,
+              "decimals": null,
+              "assetRef": null,
+              "unit": null,
+              "currency": null,
+              "asOf": null,
+              "sourceId": null
+            },
+            {
+              "metricId": "demo:metric:fees",
+              "label": "已收取費用",
+              "kind": "FEES_RECEIVED",
+              "amountAtomic": null,
+              "decimals": null,
+              "assetRef": null,
+              "unit": null,
+              "currency": null,
+              "asOf": null,
+              "sourceId": null
+            }
+          ],
+          "changes": [
+            {
+              "claim_id": "purpose",
+              "kind": "ADDED",
+              "reason": "初始收錄。",
+              "evidenceIds": [
+                "demo:ev:brief"
+              ]
+            }
+          ],
+          "limitations": [
+            "所有內容均為 DEMO_DATA，未進行即時資料擷取或鏈上驗證。",
+            "來源頁面為保留的範例網域，不提供上述主張的證明。",
+            "未確認的新鮮度一律標記 STALE；雜湊不證明研究品質或安全性。"
+          ],
+          "commercialRelationship": {
+            "declaration": "DECLARED",
+            "inclusion": "SELF_PROJECT",
+            "research": "UNPAID",
+            "sponsorship": "NONE",
+            "imdRelationship": "SELF_PROJECT",
+            "selfProject": true,
+            "details": "合成自有專案關係示例，並非真實 IMD 關係。自有研究不是獨立認證。"
+          },
+          "approval": "SYNTHETIC_DEMO"
+        }
+      ],
+      "manifests": [
+        {
+          "schemaVersion": "1.0",
+          "projectId": "demo:tide",
+          "reportId": "demo:report:tide",
+          "revision": 1,
+          "reportHash": "010b74702b18c5de267848445e35c8b0be4ae63a444e6568085b45f6831d97c8"
+        }
+      ],
+      "publication": {
+        "sequence": 1,
+        "checkedAt": null,
+        "publishedReportRef": {
+          "reportId": "demo:report:tide",
+          "revision": 1,
+          "manifestHash": "14fac1c0f248064db4dff29b2a4ae22512e76eaf8926ba41f4793bfdfcc1fb5a"
+        }
+      },
+      "withdrawals": []
+    },
+    {
+      "project": {
+        "schemaVersion": "1.0",
+        "projectId": "demo:grove-sol",
+        "name": "Grove Studio",
+        "subtitle": "相同代號，不同資產身分",
+        "category": "創作工具 · TOKEN",
+        "description": "假想的創作工具專案。GRV 與 Grove Protocol 同名但網路與地址不同，研究紀錄完全分開。",
+        "assetType": "TOKEN",
+        "assets": [
+          {
+            "assetId": "demo:asset:grove-sol",
+            "symbol": "GRV",
+            "chain": "Solana",
+            "network": "fixture:solana",
+            "address": "fixture:grove-sol",
+            "kind": "TOKEN",
+            "collection": null,
+            "tokenId": null,
+            "decimals": 18
+          }
+        ],
+        "discoveredAt": "2026-09-30T09:00:00Z",
+        "relationships": [
+          "收錄僅供研究；資產持有不等同公司股權或回報承諾。"
+        ]
+      },
+      "reports": [],
+      "manifests": [],
+      "publication": {
+        "sequence": 1,
+        "checkedAt": null,
+        "publishedReportRef": null
+      },
+      "withdrawals": []
+    },
+    {
+      "project": {
+        "schemaVersion": "1.0",
+        "projectId": "demo:cinder",
+        "name": "Cinder Archive",
+        "subtitle": "保留撤回原因，而非隱藏歷史",
+        "category": "文化保存 · NFT",
+        "description": "假想的文化典藏收藏。先前研究因權利描述缺乏支持而撤回，沒有現行報告。",
+        "assetType": "NFT",
+        "assets": [
+          {
+            "assetId": "demo:asset:cinder-eth",
+            "symbol": "CND",
+            "chain": "Ethereum",
+            "network": "fixture:ethereum",
+            "address": "fixture:cinder-eth",
+            "kind": "NFT",
+            "collection": "fixture:collection:cinder-eth",
+            "tokenId": null,
+            "decimals": 0
+          }
+        ],
+        "discoveredAt": "2026-09-30T09:00:00Z",
+        "relationships": [
+          "收錄僅供研究；資產持有不等同公司股權或回報承諾。"
+        ]
+      },
+      "reports": [
+        {
+          "schemaVersion": "1.0",
+          "projectId": "demo:cinder",
+          "reportId": "demo:report:cinder",
+          "revision": 1,
+          "parentRevision": null,
+          "state": "PUBLISHED",
+          "reason": "建立初始研究脈絡（合成案例）。",
+          "quality": "LIMITED",
+          "discoveredAt": "2026-09-28T08:00:00Z",
+          "retrievedAt": "2026-09-29T10:00:00Z",
+          "analyzedAt": "2026-09-30T09:00:00Z",
+          "verifiedAt": null,
+          "claims": [
+            {
+              "claim_id": "purpose",
+              "category": "PURPOSE",
+              "text": "假想的文化典藏收藏。先前研究因權利描述缺乏支持而撤回，沒有現行報告。",
+              "evidenceStatus": "PARTIAL",
+              "evidenceIds": [
+                "demo:ev:brief"
+              ],
+              "limitation": "合成案例，沒有實際鏈上或獨立驗證。"
+            },
+            {
+              "claim_id": "money-source",
+              "category": "MONEY_SOURCE",
+              "text": "範例設定：作品初次銷售收入。二級市場收入尚未確認。",
+              "evidenceStatus": "PARTIAL",
+              "evidenceIds": [
+                "demo:ev:brief"
+              ],
+              "limitation": "收入金額與支付者均未驗證。"
+            },
+            {
+              "claim_id": "money-destination",
+              "category": "MONEY_DESTINATION",
+              "text": "資金用途由專案管理者決定；分配比例尚未揭露。",
+              "evidenceStatus": "UNCONFIRMED",
+              "evidenceIds": [],
+              "limitation": "無可驗證的支出紀錄。"
+            },
+            {
+              "claim_id": "rights",
+              "category": "RIGHTS",
+              "text": "收藏不自動移轉著作權；實體兌換條件尚未確認。",
+              "evidenceStatus": "UNCONFIRMED",
+              "evidenceIds": [],
+              "limitation": "此描述不是可執行的權利或合約。"
+            },
+            {
+              "claim_id": "rules",
+              "category": "RULES",
+              "text": "管理者可提出規則變更；是否有延遲與否決機制尚未確認。",
+              "evidenceStatus": "UNCONFIRMED",
+              "evidenceIds": [],
+              "limitation": "未檢視任何真實合約或管理權限。"
+            }
+          ],
+          "sources": [
+            {
+              "sourceId": "demo:source:brief",
+              "label": "合成專案說明 · 非真實研究來源",
+              "url": "https://example.org/",
+              "kind": "SYNTHETIC",
+              "publishedAt": "2026-09-28T08:00:00Z",
+              "retrievedAt": "2026-09-29T10:00:00Z"
+            }
+          ],
+          "evidence": [
+            {
+              "evidenceId": "demo:ev:brief",
+              "sourceId": "demo:source:brief",
+              "excerpt": "此為測試用虛構說明，僅展示證據、修訂與限制的閱讀方式。",
+              "location": "fixture / project-brief / paragraph-1"
+            }
+          ],
+          "metrics": [
+            {
+              "metricId": "demo:metric:volume",
+              "label": "收藏底價",
+              "kind": "NFT_FLOOR",
+              "amountAtomic": null,
+              "decimals": null,
+              "assetRef": null,
+              "unit": null,
+              "currency": null,
+              "asOf": null,
+              "sourceId": null
+            },
+            {
+              "metricId": "demo:metric:fees",
+              "label": "已收取費用",
+              "kind": "FEES_RECEIVED",
+              "amountAtomic": null,
+              "decimals": null,
+              "assetRef": null,
+              "unit": null,
+              "currency": null,
+              "asOf": null,
+              "sourceId": null
+            }
+          ],
+          "changes": [
+            {
+              "claim_id": "purpose",
+              "kind": "ADDED",
+              "reason": "初始收錄。",
+              "evidenceIds": [
+                "demo:ev:brief"
+              ]
+            }
+          ],
+          "limitations": [
+            "所有內容均為 DEMO_DATA，未進行即時資料擷取或鏈上驗證。",
+            "來源頁面為保留的範例網域，不提供上述主張的證明。",
+            "未確認的新鮮度一律標記 STALE；雜湊不證明研究品質或安全性。"
+          ],
+          "commercialRelationship": {
+            "declaration": "DECLARED",
+            "inclusion": "EDITORIAL",
+            "research": "UNPAID",
+            "sponsorship": "NONE",
+            "imdRelationship": "NONE",
+            "selfProject": false,
+            "details": "合成披露：無收錄費、研究費或贊助。此設定僅用於介面測試。"
+          },
+          "approval": "SYNTHETIC_DEMO"
+        }
+      ],
+      "manifests": [
+        {
+          "schemaVersion": "1.0",
+          "projectId": "demo:cinder",
+          "reportId": "demo:report:cinder",
+          "revision": 1,
+          "reportHash": "729b035c5f44146c7dda164323ae6c5a2f39494f53955d065aa230d1805e6c4c"
+        }
+      ],
+      "publication": {
+        "sequence": 2,
+        "checkedAt": null,
+        "publishedReportRef": null
+      },
+      "withdrawals": [
+        {
+          "recordId": "demo:withdrawal:cinder:1",
+          "projectId": "demo:cinder",
+          "reportId": "demo:report:cinder",
+          "revision": 1,
+          "sequence": 2,
+          "at": "2026-10-03T12:00:00Z",
+          "reason": "實體作品權利缺乏支持；撤回現行指標並保留研究歷史。"
+        }
+      ]
+    }
+  ],
+  "nextCursor": null,
+  "coverage": {
+    "description": "僅涵蓋 5 個虛構專案。含代幣、NFT、混合資產與同名代幣；不代表市場全貌。",
+    "total": 5,
+    "asOf": "2026-10-03T12:00:00Z"
+  }
+}

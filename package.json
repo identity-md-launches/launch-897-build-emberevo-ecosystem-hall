@@ -1,0 +1,25 @@
+{
+  "name": "emberevo-ecosystem-hall",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --test tests/*.test.ts",
+    "test:browser": "tsx scripts/browser-check.ts",
+    "schemas": "tsx scripts/export-schema.ts"
+  },
+  "dependencies": {
+    "zod": "4.3.6"
+  },
+  "devDependencies": {
+    "@types/node": "24.10.1",
+    "playwright": "1.58.2",
+    "tsx": "4.21.0",
+    "typescript": "5.9.3",
+    "vite": "7.3.7"
+  }
+}

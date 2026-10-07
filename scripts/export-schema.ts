@@ -1,0 +1,10 @@
+import { z } from 'zod';
+import { mkdir, writeFile } from 'node:fs/promises';
+import { CatalogPageSchema, ConfigSchema } from '../src/domain/schema';
+import { makeFixtures } from '../src/data/fixtures';
+await mkdir('schemas', { recursive: true });
+await mkdir('fixtures', { recursive: true });
+await writeFile('schemas/catalog.schema.json', JSON.stringify(z.toJSONSchema(CatalogPageSchema), null, 2) + '\n');
+await writeFile('schemas/config.schema.json', JSON.stringify(z.toJSONSchema(ConfigSchema), null, 2) + '\n');
+await writeFile('fixtures/catalog.demo.json', JSON.stringify(await makeFixtures(), null, 2) + '\n');
+console.log('Exported two JSON schemas and the deterministic demo catalog.');

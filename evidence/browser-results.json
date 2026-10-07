@@ -1,0 +1,184 @@
+{
+  "browser": "154.0.8037.0",
+  "preview": "http://127.0.0.1:45501/research/",
+  "publicPreview": null,
+  "results": [
+    {
+      "check": "reload-safe routes at /",
+      "result": "PASS"
+    },
+    {
+      "check": "reload-safe routes at /research/",
+      "result": "PASS"
+    },
+    {
+      "check": "search, address, chain, type, ticker collision, empty and clear",
+      "result": "PASS"
+    },
+    {
+      "check": "shared published pointer across overview, board and project; board reading mode; evidence details",
+      "result": "PASS"
+    },
+    {
+      "check": "history compares stable claims and supports No material change",
+      "result": "PASS"
+    },
+    {
+      "check": "withdrawal survives browser reload with preserved record",
+      "result": "PASS"
+    },
+    {
+      "check": "demo-off isolation across reload; no fixture chunk requested",
+      "result": "PASS"
+    },
+    {
+      "check": "AI is disabled; fixed world return ignores visitor query",
+      "result": "PASS"
+    },
+    {
+      "check": "keyboard skip, search, Tab sequence, navigation and route focus",
+      "result": "PASS",
+      "detail": {
+        "width": "3px",
+        "style": "solid",
+        "color": "rgb(231, 199, 139)"
+      }
+    },
+    {
+      "check": "responsive route checks with no horizontal overflow: 390 CSS px",
+      "result": "PASS"
+    },
+    {
+      "check": "responsive route checks with no horizontal overflow: 1440 CSS px",
+      "result": "PASS"
+    },
+    {
+      "check": "responsive route checks with no horizontal overflow: 1920 CSS px",
+      "result": "PASS"
+    },
+    {
+      "check": "responsive route checks with no horizontal overflow: 320 CSS px",
+      "result": "PASS"
+    },
+    {
+      "check": "responsive route checks with no horizontal overflow: 896 CSS px",
+      "result": "PASS"
+    },
+    {
+      "check": "mobile board stacks in one column",
+      "result": "PASS",
+      "detail": "350px"
+    },
+    {
+      "check": "reduced motion removes transitions",
+      "result": "PASS"
+    },
+    {
+      "check": "principal rendered text contrast >= 4.5:1",
+      "result": "PASS",
+      "detail": [
+        {
+          "selector": "h1",
+          "foreground": "rgb(232, 237, 240)",
+          "background": "rgb(16, 24, 32)",
+          "ratio": 15.17
+        },
+        {
+          "selector": ".page-description",
+          "foreground": "rgb(167, 181, 192)",
+          "background": "rgb(16, 24, 32)",
+          "ratio": 8.53
+        },
+        {
+          "selector": ".notice p",
+          "foreground": "rgb(167, 181, 192)",
+          "background": "rgb(39, 37, 30)",
+          "ratio": 7.31
+        },
+        {
+          "selector": ".notice strong",
+          "foreground": "rgb(231, 199, 139)",
+          "background": "rgb(39, 37, 30)",
+          "ratio": 9.45
+        },
+        {
+          "selector": ".badge.teal",
+          "foreground": "rgb(142, 200, 189)",
+          "background": "rgb(25, 51, 47)",
+          "ratio": 7.16
+        },
+        {
+          "selector": ".card-description",
+          "foreground": "rgb(167, 181, 192)",
+          "background": "rgb(20, 30, 40)",
+          "ratio": 8.04
+        },
+        {
+          "selector": ".card-action",
+          "foreground": "rgb(231, 199, 139)",
+          "background": "rgb(25, 37, 48)",
+          "ratio": 9.59
+        },
+        {
+          "selector": ".pointer",
+          "foreground": "rgb(167, 181, 192)",
+          "background": "rgb(25, 37, 48)",
+          "ratio": 7.43
+        },
+        {
+          "selector": ".environment-label",
+          "foreground": "rgb(231, 199, 139)",
+          "background": "rgb(16, 24, 32)",
+          "ratio": 11.03
+        }
+      ]
+    },
+    {
+      "check": "no production-route console errors",
+      "result": "PASS"
+    },
+    {
+      "check": "visible loading and empty HTTP states",
+      "result": "PASS"
+    },
+    {
+      "check": "visible HTTP error: 找不到資料端點 · 404",
+      "result": "PASS"
+    },
+    {
+      "check": "visible HTTP error: 請求受到限制 · 429",
+      "result": "PASS"
+    },
+    {
+      "check": "visible HTTP error: 資料驗證未通過",
+      "result": "PASS"
+    },
+    {
+      "check": "visible missing config state",
+      "result": "PASS"
+    },
+    {
+      "check": "visible HTTP timeout state",
+      "result": "PASS"
+    },
+    {
+      "check": "untrusted research rendered as literal text, without elements or execution",
+      "result": "PASS"
+    },
+    {
+      "check": "no page errors or failed requests",
+      "result": "PASS",
+      "detail": {
+        "errors": [],
+        "failures": []
+      }
+    }
+  ],
+  "errors": [],
+  "failures": [],
+  "consoleErrors": [
+    "Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "Failed to load resource: the server responded with a status of 429 (Too Many Requests)"
+  ],
+  "consoleNote": "404 and 429 logs after the production checks are deliberately injected mock errors."
+}
